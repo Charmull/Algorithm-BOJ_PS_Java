@@ -15,6 +15,7 @@ public class Main {
             AUSD[i] = A.charAt((A.length()-1)-i);
             BUSD[i] = B.charAt((B.length()-1)-i);
         }
+        // AUSD과 BUSE은 char 배열이니, String으로 바꾼 후 int로 바꾼다.
         int AbySG = Integer.parseInt(String.valueOf(AUSD));
         int BbySG = Integer.parseInt(String.valueOf(BUSD));
         bw.write(Integer.toString(Math.max(AbySG, BbySG)));
