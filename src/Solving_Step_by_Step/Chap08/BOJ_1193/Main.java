@@ -36,3 +36,21 @@ public class Main {
         System.out.printf("%d/%d", numerator, denominator);
     }
 }
+
+
+/*
+규칙 찾기
+
+X번      분수      k번째 대각선
+1        1/1        1
+
+2        1/2        2
+3        2/1        2
+
+4        3/1        3
+5        2/2        3
+6        1/3        3
+.
+.
+.
+*/
