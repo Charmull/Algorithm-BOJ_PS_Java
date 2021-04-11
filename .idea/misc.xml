@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_16" default="true" project-jdk-name="16" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>
+
+<!--
+원래 환경변수로 설정해놓았던 16버전을 사용하고 있었음. intelliJ에서 자동으로 (openjdk-15) 연결해주었었음. (노트북 포맷 전)
+그러나 현재(노트북 포맷 후) 환경변수로 설정해놓은 버전은 8버전이고, 내가 백준 문제를 푸는데 사용하고 싶은 버전은 16버전임.
+그래서 수동으로 바꿔주었음.
+
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
   <component name="ProjectRootManager" version="2" languageLevel="JDK_15" default="true" project-jdk-name="openjdk-15" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>
+-->
