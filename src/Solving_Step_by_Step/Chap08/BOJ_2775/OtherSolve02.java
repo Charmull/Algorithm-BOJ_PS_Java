@@ -37,3 +37,8 @@ public class OtherSolve02 {
         br.close();
     }
 }
+
+// NOTE : StringBuilder를 썼을때 소요 시간은 276ms, 메모리는 14432KB
+//        BufferedWriter를 썼을때 소요 시간은 296ms, 메모리는 14912KB
+//        StringBuilder가 BufferedWriter에 비해 효율이 좋다.
+// TODO : 추후 StringBuilder와 BufferedWriter의 차이에 대해 더 공부하고 정리해보자.
