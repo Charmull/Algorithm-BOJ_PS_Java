@@ -42,3 +42,15 @@ public class OtherSolve02 {
 //        BufferedWriter를 썼을때 소요 시간은 296ms, 메모리는 14912KB
 //        StringBuilder가 BufferedWriter에 비해 효율이 좋다.
 // TODO : 추후 StringBuilder와 BufferedWriter의 차이에 대해 더 공부하고 정리해보자.
+
+
+// - StringBuilder 에 대해
+// StringBuilder 사용하는 이유 : String은 immutable(불변)하기때문에 서로 다른 String을 더하는 연산을 하면 새로운 String을 생성한다.
+//                             즉, String으로 연산을 하면 메모리 할당과 메모리 해제를 발생시키며 성능적으로 좋지 않다.
+//                             StringBuilder는 String과 문자열을 더할 때 새로운 객체를 생성하는 것이 아니라, 기존의 데이터에 더하는 방식을 사용한다.
+//                             따라서 속도도 빠르며 상대적으로 부하가 적다. 그래서 (빈번하게) 긴 문자열을 더하는 상황이 발생하는 경우 StringBuilder를 사용하는 것이 좋다.
+// StringBuilder 사용하는 방법 : StringBuilder 인스턴스를 생성하여, append() 메소드를 통해 문자열을 더할 수 있다.
+//                             만들어진 문자열을 출력하기 위해서는 toString() 메소드를 사용하면 된다.
+// 출처 : https://hardlearner.tistory.com/288
+
+// - BufferedWriter 에 대해
