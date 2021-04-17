@@ -54,3 +54,7 @@ public class OtherSolve02 {
 // 출처 : https://hardlearner.tistory.com/288
 
 // - BufferedWriter 에 대해
+// BufferedWriter 사용하는 이융 : 많은 양의 출력이 필요할 때, 버퍼에 담아 한 번에 출력하기 때문에 성능면에서 우수하다.
+// BufferedWriter 사용하는 방법 : BufferedWriter 인스턴스를 생성하여, write() 메소드를 통해 출력한다.
+//                              개행을 위해 "\n"을 출력하거나, newLine() 메소드를 이용한다.
+//                              버퍼를 이용하기 때문에 다 쓴 뒤에 flush() 메소드로 버퍼를 클린하게 해줘야 한다.
