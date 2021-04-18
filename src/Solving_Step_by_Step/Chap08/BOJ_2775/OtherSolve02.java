@@ -58,3 +58,13 @@ public class OtherSolve02 {
 // BufferedWriter 사용하는 방법 : BufferedWriter 인스턴스를 생성하여, write() 메소드를 통해 출력한다.
 //                              개행을 위해 "\n"을 출력하거나, newLine() 메소드를 이용한다.
 //                              버퍼를 이용하기 때문에 다 쓴 뒤에 flush() 메소드로 버퍼를 클린하게 해줘야 한다.
+
+// - Scanner와 BufferedReader 차이
+// Scanner : 키보드의 입력이 키를 누르는 즉시 바로 전달된다. 공란(" ")과 줄바꿈을 입력값의 경계로 사용한다.
+//           매번 정규식 처리를 하기 때문에 BufferedReader에 비해 느리다. 입력받은 즉시 자료형이 확정된다.
+// BufferedReader : 키보드의 입력이 있을 때마다 한 문자씩 버퍼로 전송한 후, 버퍼가 가득 차거나 개행 문자가 나타나면 버퍼의 내용을 한 번에 전송한다.
+//                  입력받은 값이 String 타입이므로 타입 변환이 필요하다.
+//                  throws Exception 혹은 try catch 를 이용해서 Exception을 따로 처리 해주어야 한다.
+//
+// TODO : 추후 자세히 공부해 볼 필요가 있으니 더 공부하고 정리해보자. (Scanner와 BufferedReader 차이, 각각의 특징, 한글 처리 방식 등)
+//        공부할 때 참고할 레퍼런스 - https://okky.kr/article/596767
