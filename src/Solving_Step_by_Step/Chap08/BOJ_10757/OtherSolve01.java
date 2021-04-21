@@ -52,3 +52,8 @@ public class OtherSolve01 {
         System.out.println(sb);
     }
 }
+
+// BigInteger 클래스 사용 방식과 직접 구현 방식 비교
+// BigInteger 클래스는 문자열 검사, 음수와 양수 검사 등 거쳐야 하는 과정이 많아
+// BigInteger 클래스를 사용하는 방식의 경우 직접 구현 방식보다 시간이 오래 걸린다.
+// + 출력 시 요소 하나씩 출력하는 것은 매우 비효율적이기 때문에 StringBuilder를 사용하는 것이 좋다.
