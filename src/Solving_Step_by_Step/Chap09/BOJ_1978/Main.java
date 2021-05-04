@@ -10,9 +10,10 @@ public class Main {
         if(num == 1) {
             return false;
         }
-        else if(num == 2) {
+        // 생략 가능
+        /*else if(num == 2) {
             return true;
-        }
+        }*/
         else {
             for(int i = 2; i < num; i++) {
                 if(num % i == 0) {
