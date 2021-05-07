@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
+// TODO : 문제에 맞춰서 범위가 정해져있어야만 가능한 풀이. 범위를 늘릴 방법은?
 public class OtherSolve02 {
     public static boolean[] makePrime(int max) {
         boolean[] isPrime = new boolean[max + 1];
