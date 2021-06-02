@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
+// TODO : 백준 제출한 3가지 방법 비교분석 해보기
 public class Main {
     private static int decompositionSum(int n) {
         int sum = n;
