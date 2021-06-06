@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 // 백준 사이트에서 제출 번호 29857124와 비교하기
+// TODO : 여러가지 sort 공부하기 (자료구조)
 public class Main {
     private static void swap(int[] arr, int x, int y) {
         int tmp = arr[x];
