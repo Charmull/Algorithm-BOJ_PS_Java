@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
+// TODO : 시간복잡도 계산 ( O(N log(logN)) )
 public class OtherSolve02 {
     public static boolean[] makePrime(int max) {
         boolean[] isPrime = new boolean[max + 1];
