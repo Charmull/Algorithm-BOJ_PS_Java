@@ -13,7 +13,7 @@ public class Main {
 
         for(int i = 2; i <= Math.sqrt(2*n + 1); i++) {
             if(isPrimeArr[i]) {
-                for(int j = i*2; j < 2*n + 1; j += i) {
+                for(int j = i*i; j < 2*n + 1; j += i) {
                     isPrimeArr[j] = false;
                 }
             }
