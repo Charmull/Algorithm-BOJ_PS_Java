@@ -15,7 +15,7 @@ public class OtherSolve01 {
 
         for(int i = 2; i <= Math.sqrt(end); i++) {
             if(primeArr[i]) {
-                for(int j = i*2; j < end+1; j = j+i) {
+                for(int j = i*i; j < end+1; j += i) {
                     primeArr[j] = false;
                 }
             }
