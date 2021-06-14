@@ -8,7 +8,7 @@ import java.io.InputStreamReader;
 public class Main {
     static char[][] arr;
 
-    private static void star(int x, int y, int n, boolean blank) {
+    private static void star(int x, int y, int n, boolean blank) {      // 공백 칸일 경우
         if(blank) {
             for(int i = x; i < x+n; i++) {
                 for(int j = y; j < y+n; j++) {
@@ -18,7 +18,7 @@ public class Main {
             return;
         }
 
-        if(n == 1) {
+        if(n == 1) {        // 더 이상 쪼갤 수 없는 블록일 때
             arr[x][y] = '*';
             return;
         }
@@ -28,7 +28,7 @@ public class Main {
         for(int i = x; i < x+n; i += size) {
             for(int j = y; j < y+n; j += size) {
                 count++;
-                if(count == 5) {
+                if(count == 5) {        // 공백 칸일 경우
                     star(i, j, size, true);
                 }
                 else {
