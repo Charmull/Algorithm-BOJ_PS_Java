@@ -13,9 +13,9 @@ public class OtherSolve01 {
             return;
         }
 
-        hanoi(n - 1, start, to, mid);
+        hanoi(n - 1, start, to, mid);   // 맨 위에 있는 탑 제외, 나머지는 중간 기둥(mid)으로 옮기기
 
-        sb.append(start).append(' ').append(to).append('\n');
+        sb.append(start).append(' ').append(to).append('\n');   // 맨 위의 탑을 목적지(to)로 옮기기
 
         hanoi(n - 1, mid, start, to);
     }
