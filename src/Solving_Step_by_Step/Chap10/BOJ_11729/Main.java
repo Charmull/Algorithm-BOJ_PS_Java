@@ -11,14 +11,14 @@ public class Main {
 
     private static void hanoi(int n, int start, int end) {
         if(n > 1) {
-            hanoi(n-1, start, 6-start-end);
+            hanoi(n-1, start, 6-start-end);     // 맨 위에 있는 탑 제외, 나머지는 중간 기둥(6-start-end)으로 옮기기
         }
 
-        sb.append(start).append(' ').append(end).append('\n');
+        sb.append(start).append(' ').append(end).append('\n');      // 맨 위의 탑을 목적지(end)로 옮기기
         count++;
 
         if(n > 1) {
-            hanoi(n-1, 6-start-end, end);
+            hanoi(n-1, 6-start-end, end);       // 중간 기둥으로 옮겨놨던 나머지 탑들을 다시 원래 목적지(end)로 옮기기
         }
     }
 
