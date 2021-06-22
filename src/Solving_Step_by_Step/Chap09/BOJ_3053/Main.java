@@ -4,7 +4,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-// TODO : 메모리, 시간 줄이는 방법 정리 (백준 사이트에 올린 4가지 방법 비교)
+// TODO : 택시 기하학(맨해튼 거리) 공부하기 (https://st-lab.tistory.com/89)
 public class Main {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -15,6 +15,9 @@ public class Main {
         br.close();
     }
 }
+
+
+// ** 메모리, 시간 줄이는 방법 정리 (백준 사이트에 올린 4가지 방법 비교) **
 
 // System.out.println(R*R*Math.PI + "\n" + R*R*2.0) 의 경우,
 //  print 전에 연산이 필요해서인지 시간과 메모리가 더 많이 요구된다. (16276KB, 160ms)
