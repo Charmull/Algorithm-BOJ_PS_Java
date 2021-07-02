@@ -4,6 +4,8 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
+// 단순삽입정렬
+// 시간복잡도 : O(n^2)
 public class OtherSolve01 {
     private static void sort(int[] arr) {
         for(int i = 1; i < arr.length; i++) {

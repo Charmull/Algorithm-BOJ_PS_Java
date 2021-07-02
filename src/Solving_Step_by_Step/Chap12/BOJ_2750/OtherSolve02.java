@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 // 단순선택정렬
+// 시간복잡도 : O(n^2)
 public class OtherSolve02 {
     private static void sort(int[] arr, int n) {
         for(int i = 0; i < n; i++) {

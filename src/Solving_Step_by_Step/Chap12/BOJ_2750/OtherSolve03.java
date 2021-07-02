@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 // 버블정렬
+// 시간복잡도 : O(n^2)
 public class OtherSolve03 {
     private static void sort(int[] arr, int len) {
         for(int i = 0; i < len; i++) {
