@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 // 병합 정렬
+// 시간복잡도 : O(nlogn)
 public class OtherSolve06 {
     private static int[] temp;
 

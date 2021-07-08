@@ -5,6 +5,8 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 // 도수 정렬
+// 단일 for문만을 사용, 재귀 호출과 이중 for문이 없어 아주 효율적인 알고리즘이다.
+// 하지만 도수분포표가 필요하기 때문에, 데이터의 최솟값과 최댓값을 미리 알고 있는 경우에만 사용할 수 있다.
 public class OtherSolve08 {
     private static void sort(int[] arr, int len, int max) {
         int[] f = new int[max + 1];

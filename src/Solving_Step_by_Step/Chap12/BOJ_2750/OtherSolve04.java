@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 // 셸 정렬
+// 시간복잡도 : O(nlog(n^2))
 public class OtherSolve04 {
     private static void sort(int[] arr, int len) {
         for(int h = len/2; h > 0; h /= 2) {

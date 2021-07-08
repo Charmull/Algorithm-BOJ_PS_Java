@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 // 힙 정렬
+// 시간복잡도 : O(nlogn)
 public class OtherSolve07 {
     private static void heap(int[] arr, int left, int right) {
         int temp = arr[left];

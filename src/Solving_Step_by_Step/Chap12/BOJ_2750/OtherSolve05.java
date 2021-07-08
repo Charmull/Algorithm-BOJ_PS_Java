@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 // 퀵 정렬
+// 시간복잡도 : O(n^2)
 public class OtherSolve05 {
     private static void sort(int[] arr, int left, int right) {
         int pl = left;
