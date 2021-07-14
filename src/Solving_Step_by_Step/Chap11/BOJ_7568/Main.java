@@ -42,3 +42,8 @@ public class Main {
         br.close();
     }
 }
+
+// 큰 차이는 없지만, 2차원 배열을 사용할 경우 메모리가 조금 더 요구됨
+// 결과
+// Main - 메모리 14148KB, 시간 124ms
+// OtherSolve01 - 메모리 14184KB, 시간 124ms
