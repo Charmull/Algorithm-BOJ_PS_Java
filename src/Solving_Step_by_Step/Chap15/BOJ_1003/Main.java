@@ -4,6 +4,9 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.io.IOException;
 
+// 재귀(Top-Down)를 이용하는 풀이는 반복문(Bottom-Up)을 이용하는 풀이에 비해 함수 호출의 개수가 기하급수적으로 늘어나기 때문에 느리다.
+// 대부분의 알고리즘은 규칙성이 있어 수식화가 가능하다. 그 규칙성을 찾아 반복문을 이용한 풀이법을 찾아야 한다.
+// Bottom-Up 풀이
 public class Main {
     static int zero;
     static int one;
@@ -36,3 +39,8 @@ public class Main {
         br.close();
     }
 }
+
+
+// 해당 피보나치 문제의 규칙성
+// 1. N의 0 호출 횟수 = N-1의 1 호출 횟수
+// 2. N의 1 호출 횟소 = N-1의 0 호출 횟수 + N-1의 1 호출 횟수
