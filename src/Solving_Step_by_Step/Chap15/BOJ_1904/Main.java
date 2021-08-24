@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.io.IOException;
 
+// Bottom-Up 풀이
 public class Main {
     private static int tile(int a) {
         if (a == 1) {
@@ -35,3 +36,7 @@ public class Main {
         br.close();
     }
 }
+
+// 해당 문제의 규칙성
+// 수열의 개수는 피보나치 수의 수열처럼 증가한다. 수열의 개수를 Tile(n)이라 할 때,
+// Tile(N) = Tile(N-1) + Tile(N-2) 을 만족한다. (점화식)
