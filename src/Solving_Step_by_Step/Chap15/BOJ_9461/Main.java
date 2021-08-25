@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.io.IOException;
 
+// Bottom-Up 풀이
 public class Main {
     static long[] seq = new long[101];
 
@@ -33,3 +34,6 @@ public class Main {
         br.close();
     }
 }
+
+// 해당 문제의 규칙성
+// 파도반 수열은 P(N) = P(N-2) + P(N-3) 을 만족한다.
