@@ -5,6 +5,7 @@ import java.io.InputStreamReader;
 import java.io.IOException;
 import java.util.StringTokenizer;
 
+// Bottom-Up 풀이
 public class Main {
     static int Red = 0;
     static int Green = 1;
@@ -33,3 +34,9 @@ public class Main {
         br.close();
     }
 }
+
+// 해당 문제의 규칙성
+// 집을 칠하는 비용을 Cost라 할 때,
+// Red : Cost[N][0] = min(Cost[N-1][1], Cost[N-1][2]) + Cost[N][0]
+// Green : Cost[N][1] = min(Cost[N-1][0], Cost[N-1][2]) + Cost[N][1]
+// Blue : Cost[N][2] = min(Cost[N-1][0], Cost[N-1][1]) + Cost[N][2]
