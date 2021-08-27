@@ -4,6 +4,8 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.io.IOException;
 
+// TODO : 더 공부해보기
+// Bottom-Up 풀이
 public class Main {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -29,3 +31,7 @@ public class Main {
         br.close();
     }
 }
+
+// 해당 문제의 규칙성
+// DP[n]은 n에 대한 메모이제이션 값이고, arr[n]은 n에 대한 계단의 값
+// DP[i] = max(DP[i-2], DP[i-3] + arr[i-1]) + arr[i]
