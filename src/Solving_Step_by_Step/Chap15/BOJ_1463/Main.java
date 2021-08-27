@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.io.IOException;
 
+// TODO : 더 공부해보기
 public class Main {
     static Integer[] dp;
 
@@ -37,3 +38,9 @@ public class Main {
         br.close();
     }
 }
+
+// 주의 사항 : 무조건 큰 수로 나누는 것이 최솟값이 아님
+// 따라서 6으로 나누어지는 경우 - 3으로 나누는 경우, 2로 나누는 경우, 1을 빼는 경우 중 최솟값
+//       3으로만 나누어지는 경우 - 3으로 나누는 경우, 1을 빼는 경우 중 최솟값
+//       2로만 나누어지는 경우 - 2로 나누는 경우, 1을 빼는 경우 중 최솟값
+//       그 외의 경우 - 1을 빼는 경우 중 최솟값
