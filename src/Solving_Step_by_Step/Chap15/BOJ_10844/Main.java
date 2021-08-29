@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.io.IOException;
 
+// Bottom-Up 풀이
 public class Main {
     final static long mod = 1000000000;
 
@@ -40,3 +41,7 @@ public class Main {
         br.close();
     }
 }
+
+// 해당 문제의 유의사항
+// 1. N번째 자릿수의 값이 0인 경우 : 다음 자릿수의 값은 1밖에 올 수 없다.
+// 2. N번째 자릿수의 값이 9인 경우 : 다음 자릿수의 값은 8밖에 올 수 없다.
