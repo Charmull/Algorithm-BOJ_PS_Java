@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.io.IOException;
 
+// Bottom-Up 풀이
 public class Main {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -31,3 +32,7 @@ public class Main {
         br.close();
     }
 }
+
+// TODO : 더 공부하기
+// 해당 문제의 규칙성
+// 'recur(N-2)'와 'recur(N-3) + arr[N-1]' 중 더 큰 값을 구해, recur(N-1)과 비교한다.
