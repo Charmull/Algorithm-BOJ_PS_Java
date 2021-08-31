@@ -7,6 +7,7 @@ import java.util.StringTokenizer;
 import java.util.Arrays;
 import java.util.Comparator;
 
+// Bottom-Up 풀이
 public class Main {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -47,3 +48,9 @@ public class Main {
         br.close();
     }
 }
+
+
+// TODO : 더 공부하기
+// 해당 문제의 규칙성
+// 1. i번째 전봇대를 기준으로 이전 전봇대들을 탐색
+// 2. i번째 A전봇대에 연결된 B전봇대는 j번째 전봇대에 연결된 B전봇대보다 값이 커야 한다.
