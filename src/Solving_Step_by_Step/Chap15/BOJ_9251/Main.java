@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.io.IOException;
 
+// Bottom-Up 풀이
 public class Main {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -29,3 +30,8 @@ public class Main {
         br.close();
     }
 }
+
+
+// 해당 문제의 규칙성
+// 1. str1[x] == str2[y]일 때, dp[x][y] = LCS(x-1, y-1) + 1
+// 2. str1[x] != str2[y]일 때, dp[x][y] = max( LCS(x-1, y), LCS(x, y-1) )
