@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
+// Bottom-Up 풀이
 public class Main {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -30,3 +31,7 @@ public class Main {
         br.close();
     }
 }
+
+
+// 해당 문제의 규칙성
+// 연속적으로 선택한 수의 합이 최댓값이 되는 수
