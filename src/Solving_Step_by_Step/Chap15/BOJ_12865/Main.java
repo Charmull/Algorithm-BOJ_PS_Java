@@ -5,6 +5,7 @@ import java.io.InputStreamReader;
 import java.io.IOException;
 import java.util.StringTokenizer;
 
+// Bottom-Up 풀이
 public class Main {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -37,3 +38,9 @@ public class Main {
         br.close();
     }
 }
+
+
+// 해당 문제의 규칙성
+// 1. i = 0, k = 0일 때, 0
+// 2. W[i] > k일 때, dp[i][k] = knapsack(i-1, k)
+// 3. 0 < i , W[i] <= k일 때, dp[i][k] = max( knapsack(i-1, k), knapsack(i-1, k-W[i]) + V[i] )
