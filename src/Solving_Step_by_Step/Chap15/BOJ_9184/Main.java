@@ -1,8 +1,8 @@
-package Solving_Step_by_Step.Chap14.BOJ_9184;
+package Solving_Step_by_Step.Chap15.BOJ_9184;
 
 import java.io.BufferedReader;
-import java.io.InputStreamReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
 public class Main {
