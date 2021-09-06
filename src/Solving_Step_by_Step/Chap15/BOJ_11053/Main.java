@@ -5,6 +5,7 @@ import java.io.InputStreamReader;
 import java.io.IOException;
 import java.util.StringTokenizer;
 
+// Bottom-Up 풀이
 public class Main {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -38,3 +39,7 @@ public class Main {
         br.close();
     }
 }
+
+
+// 해당 문제의 규칙성
+// 탐색하는 위치에서 이전 위치들을 돌며 해당 값보다 작을 경우, 그 위치에 대해 다시 탐색한다
