@@ -5,6 +5,7 @@ import java.io.InputStreamReader;
 import java.io.IOException;
 import java.util.StringTokenizer;
 
+// Bottom-Up 풀이
 public class Main {
     static int N;
     static int[] seq;
@@ -63,3 +64,11 @@ public class Main {
         br.close();
     }
 }
+
+
+// 해당 문제의 규칙성
+// 1. LIS
+// 탐색하는 위치(i)에서 이전 위치들(0~i, 인덱스 j)을 돌며 j번째 원소가 i번째 원소보다 작으면서 i번째 dp가 j번째 dp+1보다 작으면
+// j번째 원소의 값에 1을 더한 값이 i번째 dp값이 되도록 한다.
+// 2. LDS
+// 1번 LIS와 같은 방식으로 구현하되, 맨 뒤에서부터 오름차순으로 구현한다.
