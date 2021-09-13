@@ -11,7 +11,7 @@ public class Main {
     public static StringBuilder sb = new StringBuilder();
 
     private static void dfs(int depth) {
-        if (depth == M) {
+        if (depth == M) {                       // 재귀 깊이가 M과 같으면 탐색 중 담았떤 배열 출력
             for (int i = 0; i < M; i++) {
                 sb.append(arr[i]).append(' ');
             }
@@ -21,7 +21,7 @@ public class Main {
 
         for (int i = 1; i <= N; i++) {
             arr[depth] = i;
-            dfs(depth + 1);
+            dfs(depth + 1);             // 깊이를 1씩 증가시키면서 재귀 호출
         }
     }
 
