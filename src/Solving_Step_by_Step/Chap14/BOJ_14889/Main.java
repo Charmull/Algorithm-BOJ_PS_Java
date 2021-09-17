@@ -17,18 +17,18 @@ public class Main {
 
         for (int i = 0; i < N - 1; i++) {
             for (int j = i + 1; j < N; j++) {
-                if (visit[i] == true && visit[j] == true) {
+                if (visit[i] == true && visit[j] == true) {             // i, j번째 모두 visit ture이면 시작팀이므로 플러스 점수
                     team_start += map[i][j];
                     team_start += map[j][i];
                 }
-                else if (visit[i] == false && visit[j] == false) {
+                else if (visit[i] == false && visit[j] == false) {      // i, j번째 모두 visit false이면 링크팀으로 플러스 점수
                     team_link += map[i][j];
                     team_link += map[j][i];
                 }
             }
         }
 
-        int val = Math.abs(team_start - team_link);
+        int val = Math.abs(team_start - team_link);         // 점수 차이 계산
 
         if (val == 0) {
             System.out.println(val);
@@ -38,7 +38,7 @@ public class Main {
     }
 
     private static void comb(int idx, int count) {
-        if(count == N / 2) {
+        if(count == N / 2) {        // 조합 완성 시
             diff();
             return;
         }
@@ -46,8 +46,8 @@ public class Main {
         for(int i = idx; i < N; i++) {
             if(!visit[i]) {
                 visit[i] = true;
-                comb(i + 1, count + 1);
-                visit[i] = false;
+                comb(i + 1, count + 1);     // 다음 index로 재귀 호출
+                visit[i] = false;                     // 재귀 끝나면 방문하지 않음으로 변경
             }
         }
     }
