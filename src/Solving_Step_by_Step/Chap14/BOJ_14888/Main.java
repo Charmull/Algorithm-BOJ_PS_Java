@@ -13,21 +13,21 @@ public class Main {
     public static int N;
 
     private static void dfs(int num, int idx) {
-        if (idx == N) {
+        if (idx == N) {                 // 마지막 index일 경우 리턴
             MAX = Math.max(MAX, num);
             MIN = Math.min(MIN, num);
             return;
         }
         for (int i = 0; i < 4; i++) {
-            if (operator[i] > 0) {
-                operator[i]--;
+            if (operator[i] > 0) {      // 해당 연산자 개수가 1개 이상이면
+                operator[i]--;          // 해당 연산자 1 감소
                 switch (i) {
                     case 0:	dfs(num + number[idx], idx + 1);	break;
                     case 1:	dfs(num - number[idx], idx + 1);	break;
                     case 2:	dfs(num * number[idx], idx + 1);	break;
                     case 3:	dfs(num / number[idx], idx + 1);	break;
                 }
-                operator[i]++;
+                operator[i]++;          // 재귀호출 종료 시 다시 해당 연산자 개수 1 증가
             }
         }
     }
