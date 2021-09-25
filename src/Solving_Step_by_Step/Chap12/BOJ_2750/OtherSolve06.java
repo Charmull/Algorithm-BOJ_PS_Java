@@ -5,7 +5,9 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 // 병합 정렬
+// TODO : 병합 정렬 2가지 알고리즘 더 구현하고 비교해보기
 // 시간복잡도 : O(nlogn)
+// 공간복잡도 : O(n) (약 n / 2)
 public class OtherSolve06 {
     private static int[] temp;
 
@@ -35,7 +37,7 @@ public class OtherSolve06 {
     }
 
     private static void sort(int[] arr, int len) {
-        temp = new int[len];
+        temp = new int[len / 2];
         sortHelper(arr, 0, len-1);
         temp = null;
     }
