@@ -4,6 +4,9 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
+// 병합 정렬
+// 시간복잡도 : O(nlogn)
+// 공간복잡도 : O(n) (약 n)
 public class OtherSolve06_02 {
     private static void merge(int[] arr, int start, int mid, int end) {
         int i = start;
