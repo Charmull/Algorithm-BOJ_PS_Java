@@ -37,3 +37,10 @@ public class Main {
         br.close();
     }
 }
+
+
+// Java8 버전일 경우 (버전마다 조금씩 다름) :
+// Arrays.sort()는 dual-pivot Quicksort 알고리즘 사용.
+// 평균 시간복잡도가 O(nlogn)이지만 최악의 경우 O(n^2)임.
+// 따라서 Collections.sort()를 사용하는 것이 바람직함.
+// 참고 : https://st-lab.tistory.com/106
